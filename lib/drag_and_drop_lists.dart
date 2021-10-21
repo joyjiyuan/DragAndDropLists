@@ -447,7 +447,7 @@ class DragAndDropListsState extends State<DragAndDropLists> {
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: <Widget>[
-            widget.contentsWhenEmpty ?? Text('Empty'),
+            widget.contentsWhenEmpty ?? Text('我的天涯'),
             dragAndDropListTarget,
           ],
         ),

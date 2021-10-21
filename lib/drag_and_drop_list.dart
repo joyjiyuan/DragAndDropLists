@@ -94,7 +94,17 @@ class DragAndDropList implements DragAndDropListInterface {
       contents.add(Flexible(child: footer!));
     }
 
-    return Container();
+    return Container(
+        /*width: params.axis == Axis.vertical
+          ? double.infinity
+          : params.listWidth - params.listPadding!.horizontal,
+      decoration: decoration ?? params.listDecoration,
+      child: Column(
+        mainAxisSize: MainAxisSize.min,
+        crossAxisAlignment: verticalAlignment,
+        children: contents,
+      ),*/
+        );
   }
 
   List<Widget> _generateDragAndDropListInnerContents(

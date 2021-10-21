@@ -79,9 +79,12 @@ class DragAndDropListExpansion implements DragAndDropListExpansionInterface {
     );
 
     if (params.listDecoration != null) {
-      expandable = Container(
-        //decoration: params.listDecoration,
-        child: expandable,
+      expandable = BackdropFilter(
+        filter: new ImageFilter.blur(sigmaX: 10.0, sigmaY: 10.0),
+        child: Container(
+          decoration: params.listDecoration,
+          child: expandable,
+        ),
       );
     }
 

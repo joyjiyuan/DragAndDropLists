@@ -86,7 +86,9 @@ class DragAndDropListExpansion implements DragAndDropListExpansionInterface {
           filter: new ImageFilter.blur(sigmaX: 10.0, sigmaY: 10.0),
           child: Container(
             decoration: params.listDecoration,
-            child: expandable,
+            child: Card(
+              child: expandable,
+            ),
           ),
         ),
       );

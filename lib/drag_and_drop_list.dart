@@ -95,11 +95,10 @@ class DragAndDropList implements DragAndDropListInterface {
     }
 
     return Container(
-      height: 200,
       width: params.axis == Axis.vertical
           ? double.infinity
           : params.listWidth - params.listPadding!.horizontal,
-      decoration: decoration ?? params.listDecoration,
+      //decoration: decoration ?? params.listDecoration,
       child: Column(
         mainAxisSize: MainAxisSize.min,
         crossAxisAlignment: verticalAlignment,

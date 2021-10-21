@@ -80,7 +80,7 @@ class DragAndDropListExpansion implements DragAndDropListExpansionInterface {
     );
 
     if (params.listDecoration != null) {
-      expandable = ClipRect(
+      expandable = ClipRRect(
         borderRadius: BorderRadius.circular(40),
         child: BackdropFilter(
           filter: new ImageFilter.blur(sigmaX: 10.0, sigmaY: 10.0),

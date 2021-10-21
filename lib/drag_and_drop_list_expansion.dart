@@ -80,7 +80,7 @@ class DragAndDropListExpansion implements DragAndDropListExpansionInterface {
 
     if (params.listDecoration != null) {
       expandable = Container(
-        decoration: params.listDecoration,
+        //decoration: params.listDecoration,
         child: expandable,
       );
     }

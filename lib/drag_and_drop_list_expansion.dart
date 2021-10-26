@@ -87,7 +87,6 @@ class DragAndDropListExpansion implements DragAndDropListExpansionInterface {
           child: Container(
             decoration: params.listDecoration,
             margin: EdgeInsets.all(0),
-            color: Colors.white.withOpacity(0.5),
             child: expandable,
           ),
         ),
